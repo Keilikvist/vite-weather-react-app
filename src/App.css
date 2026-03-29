@@ -1,7 +1,9 @@
 .App {
-  font-family: sans-serif;
+  max-width: 600px;
+  margin: 30px auto;
 }
 
-ul {
-  text-align: left;
+.App footer {
+  font-size: 11px;
+  margin: 10px 0;
 }
