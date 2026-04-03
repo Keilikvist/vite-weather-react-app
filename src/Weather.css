@@ -3,11 +3,20 @@
   border: 1px solid #dadde1;
   padding: 16px;
   border-radius: 4px;
-  color: rgb(135, 135, 135);
+  color: #455a85;
+  background: radial-gradient(
+    827px at 47.3% 48%,
+    rgb(255, 255, 255) 0%,
+    rgb(138, 192, 216) 90%
+  );
 }
 
 .Weather form {
   margin-bottom: 20px;
+}
+
+.Weather .form-control {
+  border: 1px solid #455a85;
 }
 
 .Weather h1 {
