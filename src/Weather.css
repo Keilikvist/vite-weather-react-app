@@ -30,9 +30,9 @@
 }
 
 .Weather img {
-  height: 64px;
-  width: 64px;
-  margin-right: 8px;
+  height: 80px;
+  width: 80px;
+  margin-right: 2px;
   display: inline-block;
 }
 
