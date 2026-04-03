@@ -7,13 +7,13 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      temperature: response.data.current.temperature,
-      humidity: response.data.current.humidity,
+      temperature: response.data.temperature.current,
+      humidity: response.data.temperature.humidity,
       date: "Wednesday 07:00",
-      description: response.data.current.condition.description,
+      description: response.data.condition.description,
       iconUrl:
         "https://www.gstatic.com/weather/conditions/v1/svg/partly_cloudy_light.svg",
-      wind: response.data.current.wind.speed,
+      wind: response.data.wind.speed,
       city: response.data.city,
     });
   }
@@ -47,7 +47,7 @@ export default function Weather(props) {
         </ul>
         <div className="row mt-3">
           <div className="col-6">
-            <div className="clearfix">
+            <div className="d-flex weather-icon">
               <img
                 src={weatherData.iconUrl}
                 alt={weatherData.description}
@@ -64,7 +64,7 @@ export default function Weather(props) {
           <div className="col-6">
             <ul>
               <li>Humidity: {weatherData.humidity}%</li>
-              <li>Wind: {weatherData.wind} mph</li>
+              <li>Wind: {Math.round(weatherData.wind)} mph</li>
             </ul>
           </div>
         </div>
