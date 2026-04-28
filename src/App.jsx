@@ -11,6 +11,7 @@ export default function App() {
           <a
             href="https://www.linkedin.com/in/kayleigh-rundquist-00ab9a85/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Kayleigh Rundquist
           </a>
@@ -18,11 +19,16 @@ export default function App() {
           <a
             href="https://github.com/Keilikvist/vite-weather-react-app"
             target="_blank"
+            rel="noopener noreferrer"
           >
             GitHub
           </a>
           , and hosted on{" "}
-          <a href="https://vite-weather-react-app.netlify.app/" target="_blank">
+          <a
+            href="https://vite-weather-react-app.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Netlify
           </a>
           .
